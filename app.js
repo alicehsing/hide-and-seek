@@ -7,11 +7,6 @@ const shedContainer = document.getElementById('shed-container');
 const treeContainer = document.getElementById('tree-container');
 const boulderContainer = document.getElementById('boulder-container');
 
-const imgShed = document.getElementById('shed-img');
-const imgTree = document.getElementById('tree-img');
-const imgBoulder = document.getElementById('boulder-img');
-
-
 const totalEl = document.getElementById('total');
 const winsEl = document.getElementById('wins');
 const lossesEl = document.getElementById('losses');
@@ -36,9 +31,6 @@ function getRandomItem(arr) {
 
 function handleGuess(userGuess, correctSpot) {
     // should reset the styles
-    imgShed.src = './assets/shed.png';
-    imgTree.src = './assets/tree.webp';
-    imgBoulder.src = './assets/boulder.png';
     resetStyles();
 
     // then increment the guesses
